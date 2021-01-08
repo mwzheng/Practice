@@ -30,6 +30,13 @@ Algorithms:
 
 - Insertion Sort:
   * Slowly sort the array from left to right one index at a time
+  * Takes the next index after sorted half and sorts it
   * *Best Case:* O(1) (Already sorted)
   * *Worst Case:* O(2n) (i iterations + all the swaps necessary to find correct index)
     
+
+- Selection Sort:
+  * At each iteration, find the min value and place it in correct index
+  * Similar to insertion sort. Both have a sorted and sorted portion.
+  * Unlike insertion sort, it takes the smallest value from the unsorted section and sorts it
+  * *Average Case:* O(n<sup>2</sup>) 
