@@ -4,9 +4,12 @@ Practice coding different data structs & algorithms
 
 Data Structs:
 - Singly Linked List
+  * Bad if you insert a lot in the middle of the list
+  * Search/Delete worst case: O(n) (item last in the list)
+  * Search/Delete best case: O(1) (item is the head)
+  * Insert to head/tail: O(1)
 
-
-
+<br>
 
 Algorithms:
 - Binary Search: 

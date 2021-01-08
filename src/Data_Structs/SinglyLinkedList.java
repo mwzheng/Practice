@@ -298,6 +298,27 @@ public class SinglyLinkedList {
     }
 
     /**
+     * Searches the list for node with given item. Returns
+     * true if the item is located in the linked list,
+     * false otherwise.
+     **/
+    public boolean contains(String item) {
+        if (item == null || head == null)
+            return false;
+
+        Node currNode = head;
+
+        while (currNode != null) {
+            if (currNode.getData().equals(item))
+                return true;
+
+            currNode = currNode.next;
+        }
+
+        return false;
+    }
+
+    /**
      * Two Singly Linked List considered to be equal if they
      * contain the same data in the same order.
      **/

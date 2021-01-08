@@ -234,4 +234,18 @@ class SinglyLinkedListTest {
         assertEquals(list, linkedList.toString());
         assertEquals(10, linkedList.getSize());
     }
+
+    @Test
+    public void testContains() {
+        linkedList.insertInOrder(mango);
+        linkedList.insertInOrder(watermelon);
+        linkedList.insertInOrder(pumpkin);
+        linkedList.insertInOrder(grape);
+        linkedList.insertInOrder(tomato);
+        linkedList.insertInOrder(orange);
+
+        assertFalse(linkedList.contains("cookies"));
+        assertTrue(linkedList.contains("Watermelon"));
+        assertTrue(linkedList.contains("Mango"));
+    }
 }
